@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -14,22 +15,23 @@
 
 ?>
 
-		</div><!-- #content -->
+</div><!-- #content -->
 
-		<?php get_template_part( 'template-parts/footer/footer', 'instagram-widget' ); ?>
+<?php get_template_part('template-parts/footer/footer', 'instagram-widget'); ?>
 
-		<footer id="colophon" <?php inspiro_footer_class(); ?> role="contentinfo">
-			<div class="inner-wrap">
-				<?php
-				get_template_part( 'template-parts/footer/footer', 'widgets' );
+<footer id="colophon" <?php inspiro_footer_class(); ?> role="contentinfo">
+	<div class="inner-wrap">
+		<?php
+		get_template_part('template-parts/footer/footer', 'widgets');
 
-				get_template_part( 'template-parts/footer/site', 'info' );
-				?>
-			</div><!-- .inner-wrap -->
-		</footer><!-- #colophon -->
-	</div><!-- .site-content-contain -->
+		get_template_part('template-parts/footer/site', 'info');
+		?>
+	</div><!-- .inner-wrap -->
+</footer><!-- #colophon -->
+</div><!-- .site-content-contain -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
